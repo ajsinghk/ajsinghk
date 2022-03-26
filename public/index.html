@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang=""en>
+    <head>
+        <meta charset=""UTF-8>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>A J's Portfolio </title>
+    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/myphoto1.jpeg">
+    <style>
+        /* CSS Reset */
+        body{
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .header{
+            background-color: white;
+            height: 400px;
+            
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        .left img{
+            width: 50px;
+            /*filter: invert(100%);*/
+        }
+        .left div{
+            text-align: center;
+            line-height: 19px;
+            font-size: 20px;
+        }
+        .mid{
+            display: block;
+            width: 85%;
+            margin: 5px 0px 0px 40px ;
+        }
+        .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            font-size: 15px;
+            display: inline-block;
+        }
+        .navbar li a{
+            
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+        .navbar li a:hover,.navbar li a:active{
+            text-decoration: underline;
+            color: gray;
+        }
+        .btn{
+            font-family: 'Hurricane',cursive;
+            margin: 0px 0px 0px 9px;
+            background-color: rgb(226, 201, 236);
+            color: white;
+            padding: 4px 14px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+        .btn:hover{
+            background-color:rgb(59, 56, 56) ;
+        }
+        .rajas{
+            position: relative;
+            text-align: center;
+        }
+        .rajas img{
+            margin-top: 40px;
+            max-width: 20%;
+            max-height: 20%;
+        }
+        .anime {
+            max-width: 100%;
+            max-height: 100px;
+            background-color: white;
+            animation-name: example;
+            animation-duration: 5s;
+        }
+        .aj{
+            margin-top: 10px;
+            padding: 0px;
+            text-align: center;
+        }
+        @keyframes example {
+            from {background-color: white;}
+            to {background-color: rgb(245, 153, 16)}
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .wrapper {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .typing-demo {
+            width: 60ch;
+            animation: typing 2s steps(40), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-style: 3px solid;
+            font-size: 2em;
+            font-family: monospace;
+        }
+        @keyframes typing {
+            from  {
+                width: 0;
+            }
+        }
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+        /*Dotted Border*/
+        hr.dotted {
+            border-top: 3px dotted #bbb;
+        }
+        /*Educational Quilification*/
+        .qulif{
+            background-color: rgb(235, 214, 177);
+        }
+        .educat{
+            display: flex;
+            background-color: rgb(197, 190, 199);
+        }
+        .educat div{
+            background-color: white;
+            text-align: center;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+        }
+        .highsch{
+            box-shadow: 0px 4px 8px 0px;
+        }
+        .highsch img{
+            max-width: 150px;
+            max-height: 150px;
+        }
+        .iitm{
+            box-shadow: 0px 4px 8px 0px ;
+        }
+        .iitm img{
+            max-width: 150px;
+            max-height: 150px;
+        }
+        .kuk{
+            box-shadow: 0px 4px 8px 0px ;
+        }
+        .kuk img{
+            max-width: 150px;
+            max-height: 150px;
+        }
+        .certi1{
+            display: flex;
+            box-shadow: 0px 4px 8px 0px;
+            margin: 20px;
+            overflow: auto;
+        }
+        .certi1 div{
+            padding: 10px;
+            margin: 10px;
+        }
+        .certi1 img{
+            max-width: 450px;
+            max-height: 450px;
+        }
+        .textdeco{
+            font-size: 30px;
+            margin: 10px 10px 10px 10px;
+            padding: 0px;
+            text-align: center;
+            text-shadow: 2px 4px 6px #bbad32, 2px 4px 6px rgb(167, 35, 35);
+        }
+        .hobbies{
+            display: flex;
+            margin: 20px;
+            overflow: auto;
+        }
+        .hobbies img{
+            max-width: 350px;
+            max-height: 350px;
+        }
+        .column {
+            flex: 50%;
+        }
+        .socimed{
+            text-align: center;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+                opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        /* Solid Border*/
+        hr.solid {
+            border-top: 2px solid rgb(97, 6, 6);
+        }
+        .ajsingh{
+            text-align: center;
+        }
+
+    </style>
+    <body>
+        <header class="header">
+            <!--Left box for logo-->
+            <div class="left">
+                <img src="img/myphoto1.jpeg" alt="">
+            </div>
+            <!--Mid box for navbar-->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#eduquil">Educational Qualification</a></li>
+                    <li><a href="#certifivation">Certification</a></li>
+                    <li><a href="#hobbbbb">My Hobbies</a></li>
+                    <li><a href="#contme">Contact Me</a></li>
+                </ul>
+
+            </div>
+            <!--Right box for buttons-->
+            <div class="right">
+                <button class="btn"><a href="mailto:officiallyajsinghk@gmail.com">Send email</a></button>
+            </div>
+            <div class="rajas">
+                <img src="img/rajasthan.png" alt="Rajathan">
+                <div class="centered anime aj"><i><b>A J Singh K</b></i> <br> छोरा &#128151; राजस्थानी</div>
+            </div>
+            <div class="wrapper">
+                <div class="typing-demo">
+                    <p>A 2nd Year BTech Student of CS Department from <i>JMIETI</i> Radaur.</p>
+                </div>
+            </div>
+        </header>
+        <hr class="dotted">
+        <!--Educational Quilification-->
+        <section class="qulif">
+            <div class="textdeco">
+                <h1 id="eduquil"><i>Educational Quilification</i></h1>
+            </div>
+            <div class="educat">
+                <div class="highsch">
+                    <img src="img/BSER-Logo.png">
+                    <h3>10+2 from Board of Secondary Education Rajasthan</h3>
+                    <h3>2018-2019</h3>
+
+                </div>
+                <div class="iitm">
+                    <img src="img/iitmadras.png">
+                    <h3>BSc in Data Science from <b><i>IIT Madras</i></b></h3>
+                    <h3>2021-2024</h3>
+                </div>
+                <div class="kuk">
+                    <img src="img/kuk.png">
+                    <h3>BTech in Computer Science from <b><i>Kurukshetra University</i></b></h3>
+                    <h3>2020-2024</h3>
+                </div>
+            </div>
+
+        </section>
+        <!--Certification-->
+        <section>
+            <div>
+                <div class="textdeco">
+                    <h1 id="certifivation"><i>Certification</i></h1>
+                </div>
+                <div class="certi1">
+                    <div class="column">
+                        <img src="img/nptelccertificate.jpeg" alt="">
+                    </div>
+                    <div class="column">
+                        <h1>NPTEL Certification</h1>
+                        <blockquote>
+                            <p>National Programme on Technology Enhanced Learning (NPTEL) is a project of MHRD initiated by seven <b><i>Indian Institutes of Technology (Bombay, Delhi, Kanpur, Kharagpur, Madras, Guwahati and Roorkee)</i></b> along with the <b><i>Indian Institute of Science, Bangalore</i></b> in 2003, to provide quality education to anyone interested in learning from the IITs. The main goal was to create web and video courses in all major branches of engineering and physical sciences at the undergraduate and postgraduate levels and management courses at the postgraduate level.</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="certi1">
+                    <div class="column">
+                        <h1>NPTEL Online Certification</h1>
+                        <h3>in C and Python</h3>
+                        <blockquote>
+                            <p>I took  12 week courses in <b>C</b> and <b>Python</b> from NPTEL in July-Oct 2021. </p>
+                        </blockquote>
+                    </div>
+                    <div class="column">
+                        <img src="img/nptelpythncert.jpeg">
+                    </div>
+                </div>
+                <div class="certi1">
+                    <div class="column">
+                        <img src="img/Screenshot (1846).png">
+                    </div>
+                    <div class="column">
+                        <h1>Educate Technology</h1>
+                        <blockquote>
+                            <p>I have also done a 45 days courses in c from <b><i>Educate Technology Kota Rajasthan</i></b> in Sept 2020.</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="certi1">
+                    <div class="column">
+                        <h1>Ethical hacking course from Udemy</h1>
+                        <blockquote>
+                            <p>I have also completed a course on <b><i>Ethical Hacking</i></b> from <b><i>Udemy</i></b> in August 2021. </p>
+                        </blockquote>
+                    </div>
+                    <div class="column">
+                        <img src="img/Ehical hacking Certificate.jpg" alt="">
+                    </div>
+                </div>
+                <div class="certi1">
+                    <div class="column">
+                        <img src="img/Essay Comptition Certificate.jpg">
+                    </div>
+                    <div class="column">
+                        <h2>Monomousumi Writing Competition</h2>
+                        <p>I took part in Oct-Dec 2018.</p>
+                        <blockquote>
+                            <p>"You were born to win, but to be a winner, you must plan to win, prepare to win, and expect to win".</p>
+                            <p>-Hilary Hinton "Zig" Ziglar (American author)</p>
+                        </blockquote>
+
+                    </div>
+                </div>
+                <div class="certi1">
+                    <div class="column">
+                        <h2>Indian Student Parliament</h2>
+                        <blockquote>
+                            <p>The BCS (indian student parliament) is a classroom that provides political coaching to nearly 10,000 students in the age group of 18-25. It provides lessons on the functioning of a democracy and encourages the students to serve the society by entering public life and attaining leadership roles.</p>
+                            <p>I took part in Bharatiya Chhatra Sansad (Indian Students’ Parliament) from 23rd to 28th September 2021. </p>
+                        </blockquote>
+                    </div>
+                    <div class="column">
+                        <img src="img/BCS Certificate.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--My Hobbies-->
+        <section>
+            <div class="textdeco">
+                <h1 id="hobbbbb">Hobbies</h1>
+            </div>
+            <div class="hobbies">
+                <div class="column">
+                    <img src="img/novelhindi.jpg">
+                </div>
+                <div class="column">
+                    <h1>I like reading Novels.</h1>
+                    <blockquote>
+                        <p>“A reader lives a thousand lives before he dies. The man who never reads lives only one.” , said Jojen.
+                            ― George R.R. Martin, A Dance with Dragons</p>
+                        <p>Reading is a quality you will see in almost all the successful persons in the world. Literature, like most art, is supposed to challenge you. It’s supposed to make you a better person, or at least want to be a better person. It’s supposed to improve your understanding of the world around you and maybe even your understanding of other people. It forces you to think about something apart from yourself.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <!--Conatact Us-->
+        <section class="socimed">
+            <div>
+                <h2 id="contme">Contact Me</h2>
+                <p>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</p>
+                <h5>&#128222; +91-6376069203</h5>
+                <h5>&#9993; officiallyajsinghk@gmail.com</h5>
+                <h3>You may follow me on - </h3>
+            </div>
+            <div >
+                <!-- Add font awesome icons -->
+                <a href="https://www.facebook.com/a.j.kaushal.77" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/ajsinghk?t=ODM_50vGRTvlxPSQ4TvR2A&s=09" class="fa fa-twitter"></a>
+                <a href="mailto:officiallyajsinghk@gmail.com" class="fa fa-google"></a>
+                <a href="https://www.linkedin.com/in/a-j-singh-k-586ajdhdbdb687hhg" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/aj_singh_k/" class="fa fa-instagram"></a>
+            </div>
+        </section>
+        <div>
+            <hr class="solid">
+            <div class="ajsingh">
+                <h4> &#9997; Written By &#128151;A J Singh K</h4>
+                <p>&copy;A J Singh K. All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>
